@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/moguelor/yt-react-dark-theme.git/static/css/main.e8ea9c8c.chunk.css",
-    "main.js": "/moguelor/yt-react-dark-theme.git/static/js/main.f919a203.chunk.js",
-    "main.js.map": "/moguelor/yt-react-dark-theme.git/static/js/main.f919a203.chunk.js.map",
-    "runtime-main.js": "/moguelor/yt-react-dark-theme.git/static/js/runtime-main.682724db.js",
-    "runtime-main.js.map": "/moguelor/yt-react-dark-theme.git/static/js/runtime-main.682724db.js.map",
-    "static/js/2.a60426e7.chunk.js": "/moguelor/yt-react-dark-theme.git/static/js/2.a60426e7.chunk.js",
-    "static/js/2.a60426e7.chunk.js.map": "/moguelor/yt-react-dark-theme.git/static/js/2.a60426e7.chunk.js.map",
-    "index.html": "/moguelor/yt-react-dark-theme.git/index.html",
-    "precache-manifest.8e6ac7c8caad9d1fa2849a7849c81f3d.js": "/moguelor/yt-react-dark-theme.git/precache-manifest.8e6ac7c8caad9d1fa2849a7849c81f3d.js",
-    "service-worker.js": "/moguelor/yt-react-dark-theme.git/service-worker.js",
-    "static/css/main.e8ea9c8c.chunk.css.map": "/moguelor/yt-react-dark-theme.git/static/css/main.e8ea9c8c.chunk.css.map",
-    "static/js/2.a60426e7.chunk.js.LICENSE.txt": "/moguelor/yt-react-dark-theme.git/static/js/2.a60426e7.chunk.js.LICENSE.txt"
+    "main.css": "/yt-react-dark-theme/static/css/main.e8ea9c8c.chunk.css",
+    "main.js": "/yt-react-dark-theme/static/js/main.6e7ccd09.chunk.js",
+    "main.js.map": "/yt-react-dark-theme/static/js/main.6e7ccd09.chunk.js.map",
+    "runtime-main.js": "/yt-react-dark-theme/static/js/runtime-main.599e3f12.js",
+    "runtime-main.js.map": "/yt-react-dark-theme/static/js/runtime-main.599e3f12.js.map",
+    "static/js/2.de998fd0.chunk.js": "/yt-react-dark-theme/static/js/2.de998fd0.chunk.js",
+    "static/js/2.de998fd0.chunk.js.map": "/yt-react-dark-theme/static/js/2.de998fd0.chunk.js.map",
+    "index.html": "/yt-react-dark-theme/index.html",
+    "precache-manifest.3d94cbf9b4b99f8db1cc2ac749cb5b8b.js": "/yt-react-dark-theme/precache-manifest.3d94cbf9b4b99f8db1cc2ac749cb5b8b.js",
+    "service-worker.js": "/yt-react-dark-theme/service-worker.js",
+    "static/css/main.e8ea9c8c.chunk.css.map": "/yt-react-dark-theme/static/css/main.e8ea9c8c.chunk.css.map",
+    "static/js/2.de998fd0.chunk.js.LICENSE.txt": "/yt-react-dark-theme/static/js/2.de998fd0.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.682724db.js",
-    "static/js/2.a60426e7.chunk.js",
+    "static/js/runtime-main.599e3f12.js",
+    "static/js/2.de998fd0.chunk.js",
     "static/css/main.e8ea9c8c.chunk.css",
-    "static/js/main.f919a203.chunk.js"
+    "static/js/main.6e7ccd09.chunk.js"
   ]
 }
