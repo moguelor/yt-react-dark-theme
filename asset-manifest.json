@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/yt-react-dark-theme/static/css/main.e8ea9c8c.chunk.css",
-    "main.js": "/yt-react-dark-theme/static/js/main.66da43b6.chunk.js",
-    "main.js.map": "/yt-react-dark-theme/static/js/main.66da43b6.chunk.js.map",
+    "main.js": "/yt-react-dark-theme/static/js/main.ebc2658a.chunk.js",
+    "main.js.map": "/yt-react-dark-theme/static/js/main.ebc2658a.chunk.js.map",
     "runtime-main.js": "/yt-react-dark-theme/static/js/runtime-main.599e3f12.js",
     "runtime-main.js.map": "/yt-react-dark-theme/static/js/runtime-main.599e3f12.js.map",
     "static/js/2.de998fd0.chunk.js": "/yt-react-dark-theme/static/js/2.de998fd0.chunk.js",
     "static/js/2.de998fd0.chunk.js.map": "/yt-react-dark-theme/static/js/2.de998fd0.chunk.js.map",
     "index.html": "/yt-react-dark-theme/index.html",
-    "precache-manifest.482c86694a22a0ed45042b90403fdbf9.js": "/yt-react-dark-theme/precache-manifest.482c86694a22a0ed45042b90403fdbf9.js",
+    "precache-manifest.13053ab58a0f51c80365e51ca560776b.js": "/yt-react-dark-theme/precache-manifest.13053ab58a0f51c80365e51ca560776b.js",
     "service-worker.js": "/yt-react-dark-theme/service-worker.js",
     "static/css/main.e8ea9c8c.chunk.css.map": "/yt-react-dark-theme/static/css/main.e8ea9c8c.chunk.css.map",
     "static/js/2.de998fd0.chunk.js.LICENSE.txt": "/yt-react-dark-theme/static/js/2.de998fd0.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.599e3f12.js",
     "static/js/2.de998fd0.chunk.js",
     "static/css/main.e8ea9c8c.chunk.css",
-    "static/js/main.66da43b6.chunk.js"
+    "static/js/main.ebc2658a.chunk.js"
   ]
 }
