@@ -2,7 +2,7 @@
   "name": "yt-react-dark-theme",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://moguelor.github.com/yt-react-dark-theme",
+  "homepage": "https://moguelor.github.io/yt-react-dark-theme",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
@@ -16,7 +16,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "deploy": "react-scripts build && gh-pages -d build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
