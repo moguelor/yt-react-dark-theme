@@ -1,10 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 import Text from "./Text";
+import { ThemeContext } from "styled-components";
+import { useContext } from "react";
 
 const WrapperCard = styled.div`
-  width: ${({ width }) => width || "200px"};
-  height: ${({ height }) => height || "120px"};
+  width: ${({ width = "200px" }) => width};
+  height: ${({ height = "120px" }) => height};
   background-color: ${({ theme }) => theme.colors.surface};
   border-radius: 2px;
   margin: 5px;
@@ -23,12 +25,14 @@ const Title = styled(Text)`
 `;
 
 const Info = styled.div`
+  color: ${({ theme }) => theme.colors.text2};
   font-weight: 300;
   font-size: 70px;
-  color: ${({ theme }) => theme.colors.text2};
 `;
 
 const Card = ({ title, height, text }) => {
+  const themeContext = useContext(ThemeContext);
+  console.log(themeContext);
   return (
     <WrapperCard height={height}>
       <Title>{title}</Title>

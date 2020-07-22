@@ -1,9 +1,8 @@
 import { useState, useEffect } from "react";
 
 const useThemeMode = () => {
-  
   const localTheme = window.localStorage.getItem("theme");
-  const [theme, setTheme] = useState(localTheme || "default");
+  const [theme, setTheme] = useState("default");
 
   useEffect(() => {
     localTheme && setTheme(localTheme);

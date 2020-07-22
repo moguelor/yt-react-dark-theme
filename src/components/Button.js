@@ -4,18 +4,14 @@ import styled from "styled-components";
 const StyledButton = styled.button`
   background: none;
   outline: none;
-  border: 1px solid ${({theme}) => (theme.colors.text2)};
-  color: ${({theme}) => (theme.colors.text2)};
+  border: 1px solid ${({ theme }) => theme.colors.text2};
+  color: ${({ theme }) => theme.colors.text2};
   border-radius: 5px;
   font-size: 15px;
 `;
 
 const Button = ({ handleClick }) => {
-  return (
-      <StyledButton onClick={handleClick}>
-        Toggle Theme
-      </StyledButton>
-  );
+  return <StyledButton onClick={handleClick}>Toggle Theme</StyledButton>;
 };
 
 export default Button;

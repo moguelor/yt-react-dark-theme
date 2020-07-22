@@ -1,38 +1,28 @@
 import React from "react";
+import { Card, Column, Text, GlobalStyles, Button } from "./components";
 import { ThemeProvider } from "styled-components";
-import {
-  Card,
-  Column,
-  Text,
-  Button,
-  GlobalStyles,
-} from "./components";
 import { useThemeMode } from "./hooks";
 
-function App() {
-  const themes = {
-    default: {
-      colors: {
-        primary: "#FFF", // Color principal de la aplicación.
-        accent: "#000", // Color secundario
-        background: "#f1f1f1", // Color de fondo
-        surface: "#FFF", // Color de fondo de elemento contenedor.
-        text: "#989898", // Color del texto
-        text2: "#000", // Color de las cantidades
-      },
+const themes = {
+  default: {
+    colors: {
+      background: "#f1f1f1", // Color de fondo
+      surface: "#FFF", // Color de fondo de tarjetas.
+      text: "#989898", // Color del texto
+      text2: "#000", // Color de las cantidades
     },
-    dark: {
-      colors: {
-        primary: "#FFF",
-        accent: "#000",
-        background: "#23292d",
-        surface: "#32383b",
-        text: "#FFF",
-        text2: "#317e94",
-      },
+  },
+  dark: {
+    colors: {
+      background: "#23292d",
+      surface: "#32383b",
+      text: "#FFF",
+      text2: "#317e94",
     },
-  };
+  },
+};
 
+function App() {
   const [theme, toggleTheme] = useThemeMode();
 
   return (
