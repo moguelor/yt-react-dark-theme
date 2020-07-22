@@ -1,8 +1,7 @@
-import React from "react";
+import React, { useContext } from "react";
 import styled from "styled-components";
 import Text from "./Text";
 import { ThemeContext } from "styled-components";
-import { useContext } from "react";
 
 const WrapperCard = styled.div`
   width: ${({ width = "200px" }) => width};
