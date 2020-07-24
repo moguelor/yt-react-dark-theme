@@ -3,6 +3,11 @@ import styled from "styled-components";
 import Text from "./Text";
 import { ThemeContext } from "styled-components";
 
+/**
+ * Los componentes WrapperCard, Title e Info, los mantuve en este archivo
+ * ya que no los utilizamos en ningun otro lado mas, si no lo sacaria en nuestra 
+ * carpeta de /components ya que ahi estan los componentes reutilizables.
+ */
 const WrapperCard = styled.div`
   width: ${({ width = "200px" }) => width};
   height: ${({ height = "120px" }) => height};
@@ -30,6 +35,12 @@ const Info = styled.div`
 `;
 
 const Card = ({ title, height, text }) => {
+  /**
+   * No solamente tenemos acceso al valor del tema en componentes
+   * como los de arriba si no en cualquier otro componente de react.
+   * Estamos utilizando con "ThemeContext" para obtener el tema activo
+   * y asi poder usar sus valores si se desea.
+   */
   const themeContext = useContext(ThemeContext);
   console.log(themeContext);
   return (

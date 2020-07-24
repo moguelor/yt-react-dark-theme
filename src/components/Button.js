@@ -1,6 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 
+/**
+ * Recuerda afectar el tema en los componentes
+ * donde necesitemos.
+ */
 const StyledButton = styled.button`
   background: none;
   outline: none;

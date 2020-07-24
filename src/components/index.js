@@ -1,3 +1,6 @@
+/**
+ * De esta manera exporto mis componentes reutilizables.
+ */
 export { default as Card } from "./Card";
 export { default as Column } from "./Column";
 export { default as Text } from "./Text";

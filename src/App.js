@@ -3,6 +3,11 @@ import { Card, Column, Text, GlobalStyles, Button } from "./components";
 import { ThemeProvider } from "styled-components";
 import { useThemeMode } from "./hooks";
 
+/**
+ * Esta es la configuración de nuestro temas
+ * aqui podrías agregar los que necesites y tener una
+ * gran variedad para tus usuarios.
+ */
 const themes = {
   default: {
     colors: {
@@ -23,9 +28,20 @@ const themes = {
 };
 
 function App() {
+
+  /**
+   * El uso de nuestro custom hook.
+   */
   const [theme, toggleTheme] = useThemeMode();
 
   return (
+    /**
+     * Recuerda que el componente ThemeProvider, recibe una prop
+     * theme, esta la estamos generando con ayuda de nuestra variable
+     * de estado "theme" ya que ahi tenemos el nombre del tema actual, 
+     * y accedemos a nuestra configuración de "theme" para obtener 
+     * el objeto.
+     */
     <ThemeProvider theme={themes[theme]}>
       <GlobalStyles />
       <Column>
