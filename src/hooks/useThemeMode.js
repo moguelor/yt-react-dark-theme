@@ -6,6 +6,19 @@ import { useState, useEffect } from "react";
  * entre el tema dark y el default.
  */
 const useThemeMode = () => {
+  /**
+   * UPDATE (01/08/2020): Verificamos el tema del sistema operativo
+   * para saber si es dark o light, con la propiedad css
+   * "prefers-color-scheme" y asignarlo como default.
+   *
+   * https://caniuse.com/#search=prefers-color-scheme
+   *
+   */
+  const themeOS =
+    window.matchMedia &&
+    window.matchMedia("(prefers-color-scheme: dark)").matches
+      ? "dark"
+      : "default";
 
   /**
    * Usamos el localStorage ya que tuvimos un problema
@@ -18,13 +31,19 @@ const useThemeMode = () => {
   const [theme, setTheme] = useState("default");
 
   /**
-   * El hook useEffect(), nos ayuda a representar el 
+   * El hook useEffect(), nos ayuda a representar el
    * ciclo de vida componentDidMount, ya que le estamos pasando
-   * un arreglo vacio y nos sirve para asignar el tema si existe 
+   * un arreglo vacio y nos sirve para asignar el tema si existe
    * en el localStorage.
    */
   useEffect(() => {
-    localTheme && setTheme(localTheme);
+    /**
+     * UPDATE (01/08/2020): Tomamos como prioridad el sistema operativo, en caso
+     * que no exista un tema guardado en el local storage.
+     */
+    themeOS && !localTheme
+      ? setTheme(themeOS)
+      : localTheme && setTheme(localTheme);
   }, []);
 
   /**
@@ -44,7 +63,7 @@ const useThemeMode = () => {
   };
 
   /**
-   * Nuestro custom hook retorna nuestra variable de 
+   * Nuestro custom hook retorna nuestra variable de
    * estado y la función que realiza el toggle al tema.
    */
   return [theme, toggleTheme];
