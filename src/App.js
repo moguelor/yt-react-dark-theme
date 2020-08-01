@@ -34,7 +34,6 @@ function App() {
    */
   const [theme, toggleTheme] = useThemeMode();
 
-  return (
     /**
      * Recuerda que el componente ThemeProvider, recibe una prop
      * theme, esta la estamos generando con ayuda de nuestra variable
@@ -42,6 +41,7 @@ function App() {
      * y accedemos a nuestra configuración de "theme" para obtener 
      * el objeto.
      */
+  return (
     <ThemeProvider theme={themes[theme]}>
       <GlobalStyles />
       <Column>
